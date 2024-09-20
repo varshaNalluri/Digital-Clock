@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js" defer></script>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="options" onClick="showFormatOption()">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="format" style="display: none;">
+            <p>24-hour Format</p>
+            <label class="switch">
+                <input type="checkbox" id="checkbox" checked onClick="toggle24HourFormat()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="time">
+            <div class="main">
+                <div class="hours"></div>
+                <div class="colon">:</div>
+                <div class="mins"></div>
+            </div>
+            <div class="side">
+                <div class="am-pm"></div>
+                <div class="seconds"></div>
+            </div>
+        </div>
+        <div class="day">
+            <div class="month-name"></div>
+            <div class="day-name"></div>
+            <div class="date"></div>
+        </div>
+    </div>
+</body>
+</html>
